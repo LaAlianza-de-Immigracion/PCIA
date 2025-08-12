@@ -4,8 +4,7 @@
     <!-- Add Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pierce County Immigration Alliance</title>
     <style>
         body, html {
@@ -50,7 +49,6 @@
 
         /* Section styling */
         section {
-/*            min-height: 30vh;*/
             padding: 10px;
             display: flex;
             flex-direction: column;
@@ -70,9 +68,10 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            max-width: 500px;
-            margin: 0 auto;
+            max-width: 800px;
+
             font-family: Arial, sans-serif;
+            padding: 20px;
         }
 
         /* Button container styling */
@@ -111,12 +110,14 @@
 
         /* List styling */
         .language-list {
-            padding: 15px;           
-            margin: 0;
-            width: 100%;
+            padding: 15px;
+            margin: 0px;
+            width: 90%;
             background-color: #1189C7;
             border-radius: 20px;
             box-sizing: border-box;
+            max-height: 60vh; /* Fixed maximum height */
+            overflow-y: auto; /* Adds scroll when content exceeds height */
         }
 
             .language-list li {
@@ -172,6 +173,11 @@
             color: #E91E63 !important;
         }
 
+        .fa-instagram {
+            color: #E1306C !important;
+            font-size: 3em;
+        }
+
         /* Language display classes */
         .english {
             display: none;
@@ -195,7 +201,7 @@
             color: #333;
             text-align: center;
         }
-       
+
         /*Contact Form*/
         #section3 {
             background-color: white;
@@ -203,13 +209,13 @@
 
         h1 {
             font-size: 2.5em;
-/*            margin-bottom: 20px;
-*/        }
+            text-align: center;
+        }
 
         h2 {
             font-size: 2em;
-/*            margin-bottom: 20px;
-*/        }
+            text-align: center;
+        }
 
         /* List styling */
         .item-list {
@@ -232,6 +238,9 @@
 
         /* Google Form container */
         .form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             width: 100%;
             max-width: 800px;
             height: 60vh;
@@ -259,20 +268,28 @@
     </div>
 
     <!-- Section 1: Title -->
-    <section id="section1" >
+    <section id="section1">
         <h1>Pierce County Immigration Alliance</h1>
+        <h1>La Alianza de Immigracion de Pierce</h1>
+        <div>
+            <a href="https://instagram.com/pcia.wa" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
     </section>
 
     <!-- Section 2: List of items -->
     <section id="section2" >
         <div class="language-toggle-container">
-            <h2>Links</h2>
             <div class="button-container">
                 <button id="englishBtn" class="language-btn active" onclick="showLanguage('english')">English</button>
                 <button id="spanishBtn" class="language-btn" onclick="showLanguage('spanish')">Spanish</button>
             </div>
             <!--English Options-->
             <ul class="language-list" id="languageList">
+                <li class="english">
+                    <h2>Links</h2>
+                </li>
                 <li class="english">
                     <!--Don't forget to simplify the "body" if sending to AI-->
                     <a href="mailto:tsablan@fpschools.org?cc=lgoodpaster@fpschools.org&subject=Cancel%20the%20Sheriff's%20Contract%20with%20Franklin%20Pierce%20Schools%3A%20Keep%20ICE%20Out%20of%20Our%20Schools&body=Dear%20Franklin%20Pierce%20School%20Board%20Members%20and%20Superintendent%2C%0A%0AI%20am%20writing%20as%20a%20concerned%20%5Bcommunity%20member%2C%20parent%2C%20educator%2C%20student%2C%20resident%20of%20Franklin%20Pierce%20School%20District%5D%20to%20urge%20you%20to%20cancel%20the%20district%E2%80%99s%20contract%20with%20the%20Pierce%20County%20Sheriff's%20Department%20and%20to%20reconsider%20other%20ways%20in%20which%20we%20could%20reinvest%20these%20funds%20that%20would%20genuinely%20support%20student%20safety%20and%20belonging.%20%0A%0AAlthough%20Franklin%20Pierce%20School%20District%20Policy%204300%20states%20that%20the%20district%20will%20not%20collaborate%20with%20Immigration%20and%20Customs%20Enforcement%20(ICE)%2C%20the%20existing%20contract%20with%20the%20Pierce%20County%20Sheriff%E2%80%99s%20Office%20undermines%20this%20commitment.%20Sheriff%20Keith%20Swank%20has%20publicly%20stated%20that%20he%20intends%20to%20collaborate%20with%20ICE%2C%20despite%20this%20being%20a%20direct%20violation%20of%20Washington%20State%20and%20Pierce%20County%20law.%20By%20maintaining%20this%20contract%2C%20the%20district%20is%20granting%20him%20and%20his%20department%20access%20to%20our%20schools%20with%20little%20to%20no%20ability%20to%20hold%20these%20officers%20accountable%20to%20the%20district%20policy.%20This%20places%20immigrant%2C%20undocumented%2C%20and%20mixed-status%20families%20at%20serious%20risk.%0A%0AAdditionally%2C%20both%20research%20and%20lived%20experience%20demonstrate%20that%20Student%20Resource%20Officers%20(SROs)%20do%20not%20make%20schools%20safer.%20Instead%2C%20they%20disproportionately%20target%20and%20criminalize%20Black%2C%20Brown%2C%20immigrant%2C%20disabled%20youth.%20Our%20district%20is%20no%20exception%20to%20this%20rule%2C%20in%20fact%2C%20Franklin%20Pierce%20currently%20has%20the%20highest%20rate%20of%20law%20enforcement%20referrals%20to%20juvenile%20detention%20in%20the%20county%2C%20an%20alarming%20trend%20given%20the%20relatively%20small%20student%20population.%0A%0AIn%20contrast%2C%20schools%20across%20the%20country%20who%20have%20canceled%20their%20SRO%20contracts%20have%20seen%20a%20reduction%20in%20punitive%20student%20discipline%2C%20improved%20school%20climate%20and%20increased%20student%20belonging%20(especially%20for%20Black%2C%20Brown%2C%20immigrant%2C%20disabled%20youth).%20Additionally%2C%20these%20districts%20did%20not%20see%20an%20increase%20in%20school%20safety%20incidents.%20%0A%0AWe%20have%20both%20an%20opportunity%20and%20a%20responsibility%20to%20create%20safe%2C%20inclusive%2C%20and%20welcoming%20schools%20for%20all%20students.%20Instead%20of%20investing%20%24341%2C920%20into%20the%20sheriff's%20department%2C%20we%20could%20be%20investing%20into%20programs%20that%20have%20been%20proven%20to%20foster%20student%E2%80%99s%20safety%20and%20belonging%3A%0A1.%20Hiring%20more%20general%20education%20social%20workers%2C%20counselors%2C%20and%20employees%20who%20respond%20with%20care%2C%20not%20criminalization.%0A2.%20Hiring%20and%20retaining%20paraeducators%20to%20support%20our%20classrooms.%0A3.%20Providing%20staff%20with%20de-escalation%20and%20restorative%20practices%20training.%0A4.%20Restoring%20funding%20to%20the%20arts%20and%20student-led%20initiatives%20that%20promote%20belonging%20and%20connection.%0A5.%20Partnering%20with%20community-led%20crisis%20and%20conflict%20response%20networks%2C%20including%20peer%20mediation%20and%20trauma-informed%20teams.%0A%0A%0AThe%20current%20contract%20is%20not%20aligned%20with%20our%20values%20and%20does%20not%20serve%20our%20community.%20I%20strongly%20urge%20you%20to%20vote%20no%20on%20renewing%20or%20extending%20the%20contract%20with%20the%20Pierce%20County%20Sheriff's%20office%20and%20invest%20instead%20into%20our%20student%E2%80%99s%20mental%20health%20and%20practices%20that%20have%20been%20proven%20to%20keep%20students%20safe.%0A%0AThank%20you%20for%20your%20time%20and%20commitment%20to%20the%20school%20community.%20I%20urge%20you%20to%20stand%20with%20students%2C%20families%2C%20and%20community%20members%20and%20take%20bold%20action%20for%20student%20and%20community%20safety.%0A%0ATraducci%C3%B3n%20al%20espa%C3%B1ol%3A%09%0A%0AEstimades%20miembros%20de%20la%20Junta%20Escolar%20de%20Franklin%20Pierce%20y%20Superintendente%3A%0A%0ALes%20escribo%20como%20%5Bmiembre%20de%20la%20comunidad%2C%20madre%2Fpadre%2Fcuidador%2C%20educador%2Fa%2C%20estudiante%20o%20residente%20del%20Distrito%20Escolar%20de%20Franklin%20Pierce%5D%20para%20instarles%20a%20cancelar%20el%20contrato%20del%20distrito%20con%20la%20Oficina%20del%20Sheriff%20del%20Condado%20de%20Pierce%20y%20a%20reconsiderar%20otras%20formas%20en%20las%20que%20podr%C3%ADamos%20reinvertir%20esos%20fondos%20para%20apoyar%20verdaderamente%20la%20seguridad%20y%20el%20sentido%20de%20pertenencia%20de%20los%20estudiantes.%0A%0AAunque%20la%20Pol%C3%ADtica%204300%20del%20Distrito%20Escolar%20de%20Franklin%20Pierce%20establece%20que%20el%20distrito%20no%20colaborar%C3%A1%20con%20el%20Servicio%20de%20Inmigraci%C3%B3n%20y%20Control%20de%20Aduanas%20(ICE)%2C%20el%20contrato%20actual%20con%20la%20Oficina%20del%20Sheriff%20del%20Condado%20de%20Pierce%20contradice%20este%20compromiso.%20El%20Sheriff%20Keith%20Swank%20ha%20declarado%20p%C3%BAblicamente%20su%20intenci%C3%B3n%20de%20colaborar%20con%20ICE%2C%20a%20pesar%20de%20que%20esto%20representa%20una%20violaci%C3%B3n%20directa%20de%20las%20leyes%20del%20estado%20de%20Washington%20y%20del%20condado%20de%20Pierce.%20Al%20mantener%20este%20contrato%2C%20el%20distrito%20le%20otorga%20acceso%20a%20nuestras%20escuelas%20a%20%C3%A9l%20y%20a%20su%20departamento%2C%20sin%20tener%20mecanismos%20claros%20para%20hacer%20que%20estos%20oficiales%20cumplan%20con%20las%20pol%C3%ADticas%20del%20distrito.%20Esto%20pone%20en%20grave%20riesgo%20a%20las%20familias%20inmigrantes%2C%20indocumentadas%20y%20de%20estatus%20mixto.%0A%0AAdem%C3%A1s%2C%20tanto%20la%20investigaci%C3%B3n%20como%20la%20experiencia%20vivida%20demuestran%20que%20los%20Oficiales%20de%20Recursos%20Escolares%20(OREs)%20no%20hacen%20que%20las%20escuelas%20sean%20m%C3%A1s%20seguras.%20Por%20el%20contrario%2C%20tienden%20a%20criminalizar%20de%20manera%20desproporcionada%20a%20estudiantes%20negros%2C%20latinos%2C%20inmigrantes%20y%20con%20discapacidades.%20Nuestro%20distrito%20no%20es%20la%20excepci%C3%B3n%3A%20Franklin%20Pierce%20tiene%20actualmente%20la%20tasa%20m%C3%A1s%20alta%20de%20derivaciones%20a%20detenci%C3%B3n%20juvenil%20por%20parte%20de%20la%20polic%C3%ADa%20en%20todo%20el%20condado%2C%20una%20tendencia%20alarmante%20dada%20su%20poblaci%C3%B3n%20estudiantil%20relativamente%20peque%C3%B1a.%0A%0AEn%20contraste%2C%20los%20distritos%20escolares%20de%20todo%20el%20pa%C3%ADs%20que%20han%20cancelado%20sus%20contratos%20con%20OREs%20han%20observado%20una%20disminuci%C3%B3n%20en%20la%20disciplina%20punitiva%20hacia%20los%20estudiantes%2C%20una%20mejora%20en%20el%20clima%20escolar%20y%20un%20mayor%20sentido%20de%20pertenencia%20(especialmente%20entre%20estudiantes%20negros%2C%20latinos%2C%20inmigrantes%20y%20con%20discapacidades).%20Adem%C3%A1s%2C%20estos%20distritos%20no%20experimentaron%20un%20aumento%20en%20los%20incidentes%20de%20seguridad%20escolar.%0A%0ATenemos%20tanto%20la%20oportunidad%20como%20la%20responsabilidad%20de%20crear%20escuelas%20seguras%2C%20inclusivas%20y%20acogedoras%20para%20todes%20les%20estudiantes.%20En%20lugar%20de%20invertir%20%24341%2C920%20en%20el%20departamento%20del%20sheriff%2C%20podr%C3%ADamos%20destinar%20esos%20fondos%20a%20programas%20que%20han%20demostrado%20fomentar%20la%20seguridad%20y%20el%20bienestar%20de%20les%20estudiantes%3A%0A%0A1.%20Contratar%20a%20m%C3%A1s%20trabajadores%20sociales%20de%20educaci%C3%B3n%20general%2C%20consejeros%20y%20personal%20que%20respondan%20con%20cuidado%2C%20no%20con%20criminalizaci%C3%B3n.%0A2.%20Contratar%20y%20retener%20a%20paraprofesionales%20para%20apoyar%20en%20las%20aulas.%0A3.%20Brindar%20capacitaciones%20al%20personal%20en%20pr%C3%A1cticas%20restaurativas%20y%20t%C3%A9cnicas%20de%20desescalamiento.%0A4.%20Restaurar%20la%20financiaci%C3%B3n%20de%20las%20artes%20y%20de%20iniciativas%20estudiantiles%20que%20promuevan%20la%20conexi%C3%B3n%20y%20el%20sentido%20de%20pertenencia.%0A5.%20Establecer%20alianzas%20con%20redes%20comunitarias%20que%20respondan%20a%20crisis%20y%20conflictos%2C%20incluyendo%20equipos%20informados%20en%20trauma%20y%20mediaci%C3%B3n%20entre%20pares.%0A%0AEl%20contrato%20actual%20no%20est%C3%A1%20alineado%20con%20nuestros%20valores%20ni%20sirve%20a%20nuestra%20comunidad.%20Les%20insto%20firmemente%20a%20votar%20en%20contra%20de%20renovar%20o%20extender%20el%20contrato%20con%20la%20Oficina%20del%20Sheriff%20del%20Condado%20de%20Pierce%20y%2C%20en%20su%20lugar%2C%20invertir%20en%20la%20salud%20mental%20de%20les%20estudiantes%20y%20en%20pr%C3%A1cticas%20que%20han%20demostrado%20mantenerles%20a%20salvo.%0A%0AGracias%20por%20su%20tiempo%20y%20compromiso%20con%20la%20comunidad%20escolar.%20Les%20insto%20a%20que%20se%20pongan%20del%20lado%20de%20les%20estudiantes%2C%20familias%20y%20miembros%20de%20la%20comunidad%2C%20y%20tomen%20medidas%20valientes%20por%20la%20seguridad%20estudiantil%20y%20comunitaria.%0A%0AAtentamente%2F%20Sincerely%2C%0A%5BSu%20nombre%5D%2F%20%5BYour%20name%5D"
@@ -298,12 +315,150 @@
                     </a>
                 </li>
                 <li class="english">
+                    <a href="https://www.fpschools.org/about/policies-and-procedures/4000s-community-relations/relations-with-other-agencies-and-schools/4300-limiting-immigration-enforcement-in-schools" class="alink">
+                        <span>Franklin Pierce School District Policy 4300: Limiting Immigration Enforcement in Schools</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="english">
+                    <a href="https://policefreeschools.org/resources/we-came-to-learn-a-call-to-action-for-police-free-schools/" class="alink">
+                        <span>Advancement Project:  A call to Action for Police Free Schools</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </li>
+                <li class="english">
+                    <h2>Articles</h2>
+                </li>
+                <li class="english">
+                    <a href="https://www.aclu-wa.org/story/school-resource-officers-when-cure-worse-disease#:~:text=Exacerbating%20this%20problem%20is%20the,officer%20or%20not%20following%20directions" class="alink">
+                        <span>Article: School Resource Officers: When the Cure is Worse than the Disease</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="english">
+                    <a href="https://www.oregonmetro.gov/news/students-cheer-schools-decision-cut-ties-police-agencies" class="alink">
+                        <span>Article: Students cheer schools' decision to cut ties with police agencies</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="english">
+                    <a href="https://pbswisconsin.org/news-item/madison-school-district-removes-police-from-schools/" class="alink">
+                        <span>Article: Madison School District Removes Police from Schools</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="english">
+                    <a href="https://youthtoday.org/2022/08/what-happened-after-minneapolis-removed-police-officers-sros-from-schools/" class="alink">
+                        <span>Article: What happened after Minneapolis removed police officers from schools</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="english">
+                    <a href="https://www.theguardian.com/us-news/2020/jun/01/minneapolis-public-school-end-police-contract" class="alink">
+                        <span>Article: Minneapolis public school board votes to terminate its contract with police</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="english">
+                    <a href="https://www.thenewstribune.com/news/local/education/article255739316.html" class="alink">
+                        <span>Article: Under new contract, officers will be on-call for Tacoma schools but not stationed on campus</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="english">
+                    <a href="https://www.thenewstribune.com/news/local/education/article288477667.html" class="alink">
+                        <span>Article: This Pierce County school district to lay off 60 teachers, staff amid budget issues</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="english">
+                    <a href="https://www.thenewstribune.com/news/local/education/article307715590.html" class="alink">
+                        <span>Article: Parents, staff, students rally against cuts at this Pierce County district</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="english">
+                    <a href="https://drive.google.com/file/d/1H6oX6P3EJX4X3DIDvn_S38x6oVb7_1Jv/view?usp=drivesdk" class="alink">
+                        <span>Additional Research: How do SROs impact school climate.pdf</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="english">
                     <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9388351/" class="alink">
                         <span>Study: SROs Do Not Prevent Gun Violence in Schools</span>
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </a>
                 </li>
+                <li class="english">
+                    <h2>Know Your Rights</h2>
+                </li>
+                <li class="english">
+                    <a href="https://www.immigrationadvocates.org/nonprofit/legaldirectory/" class="alink">
+                        <span>Immigration Legal Directory - Nonprofit Resource Center</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </li>
+                <li class="english">
+                    <a href="https://drive.google.com/file/d/1rkMqNGNSXG0ThO8mcOIZFmV-B5OH04XX/view?usp=sharing" class="alink">
+                        <span>PCIA Know Your Rights Presentation.pdf</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </li>
+                <li class="english">
+                    <a href="https://static1.squarespace.com/static/533dcf7ce4b0f92a7a64292e/t/67a3a7a0739586096f2e67ba/1738778531988/2025+Immigrant+Safety+Plan+for+Youth+and+Children.pdf" class="alink">
+                        <span>Immigrant Safety Plan for Youth and Children</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </li>
+                <li class="english">
+                    <a href="https://www.ilrc.org/sites/default/files/resources/imm_preparedness_kit_april2020_1.pdf" class="alink">
+                        <span>Immigration Preparedness Toolkit</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </li>
+                <li class="english">
+                    <a href="https://www.ilrc.org/red-cards-tarjetas-rojas" class="alink">
+                        <span>Red Cards - ILRC</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </li>
+                <li class="english">
+                    <a href="https://www.wehaverights.us/" class="alink">
+                        <span>We Have Rights Informational Videos</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </li>
+                <li class="english">
+                    <a href="https://www.nwirp.org/resources/kyr/" class="alink">
+                        <span>Know Your Rights | NWIRP.org</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </li>
+                <li class="english">
+                    <h2>Housing Services & Support</h2>
+                </li>
+                <li class="english">
+                    <a href="https://www.piercecountywa.gov/4701/Housing-Assistance-and-Programs" class="alink">
+                        <span>Housing Assistance and Programs | Pierce County, WA </span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </li>
+                <li class="english">
+                    <a href="https://www.piercecountywa.gov/7142/Eviction-Prevention" class="alink">
+                        <span>Eviction prevention | Pierce County, WA </span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </li>
+                <li class="english">
+                    <a href="https://www.piercecountywa.gov/1280/Energy-Assistance" class="alink">
+                        <span>Energy Assistance Program (EAP) | Pierce County, WA</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </li>
                 <!--Spanish Options-->
+                <li class="spanish">
+                    <h2>Links</h2>
+                </li>
                 <li class="spanish">
                     <!--Don't forget to simplify the "body" if sending to AI-->
                     <a href="mailto:tsablan@fpschools.org?cc=lgoodpaster@fpschools.org&subject=Cancel%20the%20Sheriff's%20Contract%20with%20Franklin%20Pierce%20Schools%3A%20Keep%20ICE%20Out%20of%20Our%20Schools&body=Dear%20Franklin%20Pierce%20School%20Board%20Members%20and%20Superintendent%2C%0A%0AI%20am%20writing%20as%20a%20concerned%20%5Bcommunity%20member%2C%20parent%2C%20educator%2C%20student%2C%20resident%20of%20Franklin%20Pierce%20School%20District%5D%20to%20urge%20you%20to%20cancel%20the%20district%E2%80%99s%20contract%20with%20the%20Pierce%20County%20Sheriff's%20Department%20and%20to%20reconsider%20other%20ways%20in%20which%20we%20could%20reinvest%20these%20funds%20that%20would%20genuinely%20support%20student%20safety%20and%20belonging.%20%0A%0AAlthough%20Franklin%20Pierce%20School%20District%20Policy%204300%20states%20that%20the%20district%20will%20not%20collaborate%20with%20Immigration%20and%20Customs%20Enforcement%20(ICE)%2C%20the%20existing%20contract%20with%20the%20Pierce%20County%20Sheriff%E2%80%99s%20Office%20undermines%20this%20commitment.%20Sheriff%20Keith%20Swank%20has%20publicly%20stated%20that%20he%20intends%20to%20collaborate%20with%20ICE%2C%20despite%20this%20being%20a%20direct%20violation%20of%20Washington%20State%20and%20Pierce%20County%20law.%20By%20maintaining%20this%20contract%2C%20the%20district%20is%20granting%20him%20and%20his%20department%20access%20to%20our%20schools%20with%20little%20to%20no%20ability%20to%20hold%20these%20officers%20accountable%20to%20the%20district%20policy.%20This%20places%20immigrant%2C%20undocumented%2C%20and%20mixed-status%20families%20at%20serious%20risk.%0A%0AAdditionally%2C%20both%20research%20and%20lived%20experience%20demonstrate%20that%20Student%20Resource%20Officers%20(SROs)%20do%20not%20make%20schools%20safer.%20Instead%2C%20they%20disproportionately%20target%20and%20criminalize%20Black%2C%20Brown%2C%20immigrant%2C%20disabled%20youth.%20Our%20district%20is%20no%20exception%20to%20this%20rule%2C%20in%20fact%2C%20Franklin%20Pierce%20currently%20has%20the%20highest%20rate%20of%20law%20enforcement%20referrals%20to%20juvenile%20detention%20in%20the%20county%2C%20an%20alarming%20trend%20given%20the%20relatively%20small%20student%20population.%0A%0AIn%20contrast%2C%20schools%20across%20the%20country%20who%20have%20canceled%20their%20SRO%20contracts%20have%20seen%20a%20reduction%20in%20punitive%20student%20discipline%2C%20improved%20school%20climate%20and%20increased%20student%20belonging%20(especially%20for%20Black%2C%20Brown%2C%20immigrant%2C%20disabled%20youth).%20Additionally%2C%20these%20districts%20did%20not%20see%20an%20increase%20in%20school%20safety%20incidents.%20%0A%0AWe%20have%20both%20an%20opportunity%20and%20a%20responsibility%20to%20create%20safe%2C%20inclusive%2C%20and%20welcoming%20schools%20for%20all%20students.%20Instead%20of%20investing%20%24341%2C920%20into%20the%20sheriff's%20department%2C%20we%20could%20be%20investing%20into%20programs%20that%20have%20been%20proven%20to%20foster%20student%E2%80%99s%20safety%20and%20belonging%3A%0A1.%20Hiring%20more%20general%20education%20social%20workers%2C%20counselors%2C%20and%20employees%20who%20respond%20with%20care%2C%20not%20criminalization.%0A2.%20Hiring%20and%20retaining%20paraeducators%20to%20support%20our%20classrooms.%0A3.%20Providing%20staff%20with%20de-escalation%20and%20restorative%20practices%20training.%0A4.%20Restoring%20funding%20to%20the%20arts%20and%20student-led%20initiatives%20that%20promote%20belonging%20and%20connection.%0A5.%20Partnering%20with%20community-led%20crisis%20and%20conflict%20response%20networks%2C%20including%20peer%20mediation%20and%20trauma-informed%20teams.%0A%0A%0AThe%20current%20contract%20is%20not%20aligned%20with%20our%20values%20and%20does%20not%20serve%20our%20community.%20I%20strongly%20urge%20you%20to%20vote%20no%20on%20renewing%20or%20extending%20the%20contract%20with%20the%20Pierce%20County%20Sheriff's%20office%20and%20invest%20instead%20into%20our%20student%E2%80%99s%20mental%20health%20and%20practices%20that%20have%20been%20proven%20to%20keep%20students%20safe.%0A%0AThank%20you%20for%20your%20time%20and%20commitment%20to%20the%20school%20community.%20I%20urge%20you%20to%20stand%20with%20students%2C%20families%2C%20and%20community%20members%20and%20take%20bold%20action%20for%20student%20and%20community%20safety.%0A%0ATraducci%C3%B3n%20al%20espa%C3%B1ol%3A%09%0A%0AEstimades%20miembros%20de%20la%20Junta%20Escolar%20de%20Franklin%20Pierce%20y%20Superintendente%3A%0A%0ALes%20escribo%20como%20%5Bmiembre%20de%20la%20comunidad%2C%20madre%2Fpadre%2Fcuidador%2C%20educador%2Fa%2C%20estudiante%20o%20residente%20del%20Distrito%20Escolar%20de%20Franklin%20Pierce%5D%20para%20instarles%20a%20cancelar%20el%20contrato%20del%20distrito%20con%20la%20Oficina%20del%20Sheriff%20del%20Condado%20de%20Pierce%20y%20a%20reconsiderar%20otras%20formas%20en%20las%20que%20podr%C3%ADamos%20reinvertir%20esos%20fondos%20para%20apoyar%20verdaderamente%20la%20seguridad%20y%20el%20sentido%20de%20pertenencia%20de%20los%20estudiantes.%0A%0AAunque%20la%20Pol%C3%ADtica%204300%20del%20Distrito%20Escolar%20de%20Franklin%20Pierce%20establece%20que%20el%20distrito%20no%20colaborar%C3%A1%20con%20el%20Servicio%20de%20Inmigraci%C3%B3n%20y%20Control%20de%20Aduanas%20(ICE)%2C%20el%20contrato%20actual%20con%20la%20Oficina%20del%20Sheriff%20del%20Condado%20de%20Pierce%20contradice%20este%20compromiso.%20El%20Sheriff%20Keith%20Swank%20ha%20declarado%20p%C3%BAblicamente%20su%20intenci%C3%B3n%20de%20colaborar%20con%20ICE%2C%20a%20pesar%20de%20que%20esto%20representa%20una%20violaci%C3%B3n%20directa%20de%20las%20leyes%20del%20estado%20de%20Washington%20y%20del%20condado%20de%20Pierce.%20Al%20mantener%20este%20contrato%2C%20el%20distrito%20le%20otorga%20acceso%20a%20nuestras%20escuelas%20a%20%C3%A9l%20y%20a%20su%20departamento%2C%20sin%20tener%20mecanismos%20claros%20para%20hacer%20que%20estos%20oficiales%20cumplan%20con%20las%20pol%C3%ADticas%20del%20distrito.%20Esto%20pone%20en%20grave%20riesgo%20a%20las%20familias%20inmigrantes%2C%20indocumentadas%20y%20de%20estatus%20mixto.%0A%0AAdem%C3%A1s%2C%20tanto%20la%20investigaci%C3%B3n%20como%20la%20experiencia%20vivida%20demuestran%20que%20los%20Oficiales%20de%20Recursos%20Escolares%20(OREs)%20no%20hacen%20que%20las%20escuelas%20sean%20m%C3%A1s%20seguras.%20Por%20el%20contrario%2C%20tienden%20a%20criminalizar%20de%20manera%20desproporcionada%20a%20estudiantes%20negros%2C%20latinos%2C%20inmigrantes%20y%20con%20discapacidades.%20Nuestro%20distrito%20no%20es%20la%20excepci%C3%B3n%3A%20Franklin%20Pierce%20tiene%20actualmente%20la%20tasa%20m%C3%A1s%20alta%20de%20derivaciones%20a%20detenci%C3%B3n%20juvenil%20por%20parte%20de%20la%20polic%C3%ADa%20en%20todo%20el%20condado%2C%20una%20tendencia%20alarmante%20dada%20su%20poblaci%C3%B3n%20estudiantil%20relativamente%20peque%C3%B1a.%0A%0AEn%20contraste%2C%20los%20distritos%20escolares%20de%20todo%20el%20pa%C3%ADs%20que%20han%20cancelado%20sus%20contratos%20con%20OREs%20han%20observado%20una%20disminuci%C3%B3n%20en%20la%20disciplina%20punitiva%20hacia%20los%20estudiantes%2C%20una%20mejora%20en%20el%20clima%20escolar%20y%20un%20mayor%20sentido%20de%20pertenencia%20(especialmente%20entre%20estudiantes%20negros%2C%20latinos%2C%20inmigrantes%20y%20con%20discapacidades).%20Adem%C3%A1s%2C%20estos%20distritos%20no%20experimentaron%20un%20aumento%20en%20los%20incidentes%20de%20seguridad%20escolar.%0A%0ATenemos%20tanto%20la%20oportunidad%20como%20la%20responsabilidad%20de%20crear%20escuelas%20seguras%2C%20inclusivas%20y%20acogedoras%20para%20todes%20les%20estudiantes.%20En%20lugar%20de%20invertir%20%24341%2C920%20en%20el%20departamento%20del%20sheriff%2C%20podr%C3%ADamos%20destinar%20esos%20fondos%20a%20programas%20que%20han%20demostrado%20fomentar%20la%20seguridad%20y%20el%20bienestar%20de%20les%20estudiantes%3A%0A%0A1.%20Contratar%20a%20m%C3%A1s%20trabajadores%20sociales%20de%20educaci%C3%B3n%20general%2C%20consejeros%20y%20personal%20que%20respondan%20con%20cuidado%2C%20no%20con%20criminalizaci%C3%B3n.%0A2.%20Contratar%20y%20retener%20a%20paraprofesionales%20para%20apoyar%20en%20las%20aulas.%0A3.%20Brindar%20capacitaciones%20al%20personal%20en%20pr%C3%A1cticas%20restaurativas%20y%20t%C3%A9cnicas%20de%20desescalamiento.%0A4.%20Restaurar%20la%20financiaci%C3%B3n%20de%20las%20artes%20y%20de%20iniciativas%20estudiantiles%20que%20promuevan%20la%20conexi%C3%B3n%20y%20el%20sentido%20de%20pertenencia.%0A5.%20Establecer%20alianzas%20con%20redes%20comunitarias%20que%20respondan%20a%20crisis%20y%20conflictos%2C%20incluyendo%20equipos%20informados%20en%20trauma%20y%20mediaci%C3%B3n%20entre%20pares.%0A%0AEl%20contrato%20actual%20no%20est%C3%A1%20alineado%20con%20nuestros%20valores%20ni%20sirve%20a%20nuestra%20comunidad.%20Les%20insto%20firmemente%20a%20votar%20en%20contra%20de%20renovar%20o%20extender%20el%20contrato%20con%20la%20Oficina%20del%20Sheriff%20del%20Condado%20de%20Pierce%20y%2C%20en%20su%20lugar%2C%20invertir%20en%20la%20salud%20mental%20de%20les%20estudiantes%20y%20en%20pr%C3%A1cticas%20que%20han%20demostrado%20mantenerles%20a%20salvo.%0A%0AGracias%20por%20su%20tiempo%20y%20compromiso%20con%20la%20comunidad%20escolar.%20Les%20insto%20a%20que%20se%20pongan%20del%20lado%20de%20les%20estudiantes%2C%20familias%20y%20miembros%20de%20la%20comunidad%2C%20y%20tomen%20medidas%20valientes%20por%20la%20seguridad%20estudiantil%20y%20comunitaria.%0A%0AAtentamente%2F%20Sincerely%2C%0A%5BSu%20nombre%5D%2F%20%5BYour%20name%5D"
@@ -318,7 +473,7 @@
                 </li>
                 <li class="spanish">
                     <a href="https://sign.moveon.org/petitions/ice-out-of-schools-fuera-ice-de-las-escuelas-2?source=rawlink&share=3869ee25-235d-4d26-818a-6b6d5c66552a" class="alink">
-                        <span>Firme nuestra petici�n: �Fuera ICE de las escuelas! </span>
+                        <span>Firme nuestra petición: ¡Fuera ICE de las escuelas!</span>
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </a>
                 </li>
@@ -328,9 +483,150 @@
                     </a>
                 </li>
                 <li class="spanish">
+                    <a href="https://www.fpschools.org/about/policies-and-procedures/4000s-community-relations/relations-with-other-agencies-and-schools/4300-limiting-immigration-enforcement-in-schools" class="alink">
+                        <span>Política 4300 del Distrito Escolar Franklin Pierce: Limitación de la Aplicación de la Inmigración en las Escuelas</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="spanish">
+                    <a href="https://policefreeschools.org/resources/we-came-to-learn-a-call-to-action-for-police-free-schools/" class="alink">
+                        <span>Advancement Project: Un Llamado a la Acción por Escuelas Libres de Policía</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="spanish">
+                    <h2>Articles</h2>
+                </li>
+                <li class="spanish">
+                    <a href="https://www.oregonmetro.gov/news/students-cheer-schools-decision-cut-ties-police-agencies" class="alink">
+                        <span>Artículo: Los estudiantes celebran la decisión de las escuelas de cortar vínculos con las agencias policiales</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="spanish">
+                    <a href="https://pbswisconsin.org/news-item/madison-school-district-removes-police-from-schools/" class="alink">
+                        <span>Artículo: El Distrito Escolar de Madison retira a la policía de las escuelas</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="spanish">
+                    <a href="https://www.aclu-wa.org/story/school-resource-officers-when-cure-worse-disease#:~:text=Exacerbating%20this%20problem%20is%20the,officer%20or%20not%20following%20directions" class="alink">
+                        <span>Artículo: Oficiales de Recursos Escolares: Cuando la Cura es Peor que la Enfermedad</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="spanish">
+                    <a href="https://youthtoday.org/2022/08/what-happened-after-minneapolis-removed-police-officers-sros-from-schools/" class="alink">
+                        <span>Artículo: Del buró: Qué ocurrió después de que Minneapolis retirara a los oficiales de policía de las escuelas</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="spanish">
+                    <a href="https://www.theguardian.com/us-news/2020/jun/01/minneapolis-public-school-end-police-contract" class="alink">
+                        <span>Artículo: La junta de escuelas públicas de Minneapolis vota para rescindir su contrato con la policía</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="spanish">
+                    <a href="https://www.thenewstribune.com/news/local/education/article255739316.html" class="alink">
+                        <span>Artículo: Bajo el nuevo contrato, los oficiales estarán de guardia para las escuelas de Tacoma, pero no estarán asignados permanentemente en los campus.</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="spanish">
+                    <a href="https://www.thenewstribune.com/news/local/education/article288477667.html" class="alink">
+                        <span>Artículo: Este distrito escolar del condado de Pierce despedirá a 60 maestros y miembros del personal debido a problemas presupuestarios</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="spanish">
+                    <a href="https://www.thenewstribune.com/news/local/education/article307715590.html" class="alink">
+                        <span>Artículo: Padres, personal y estudiantes se manifiestan contra los recortes en este distrito del condado de Pierce.</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="spanish">
+                    <a href="https://drive.google.com/file/d/1H6oX6P3EJX4X3DIDvn_S38x6oVb7_1Jv/view" class="alink">
+                        <span>Investigación adicional: ¿Cómo impactan los SROs en el clima escolar?</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="spanish">
                     <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9388351/" class="alink">
                         <span>Estudio: Los OREs no previenen la violencia armada en las escuelas</span>
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </li>
+                <li class="spanish">
+                    <h2>Recursos de Conozca sus Derechos</h2>
+                </li>
+                <li class="spanish">
+                    <a href="https://drive.google.com/file/d/1rkMqNGNSXG0ThO8mcOIZFmV-B5OH04XX/view?usp=sharing" class="alink">
+                        <span>PCIA Conozca sus Derechos Presentación | KYRs Presentation</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="spanish">
+                    <a href="https://www.immigrationadvocates.org/nonprofit/legaldirectory/" class="alink">
+                        <span>Servicios Jurídicos de Inmigración</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="spanish">
+                    <a href="https://www.nwirp.org/resources/kyr/" class="alink">
+                        <span>NWIRP CTR Lista de Recursos</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="spanish">
+                    <a href="https://www.wehaverights.us/spanish" class="alink">
+                        <span>Videos Informativos Tenemos Derechos</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="spanish">
+                    <a href="https://www.ilrc.org/red-cards-tarjetas-rojas" class="alink">
+                        <span>Tarjetas Rojas | ILRC</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="spanish">
+                    <a href="https://www.ilrc.org/sites/default/files/resources/imm_preparedness_kit_june2020_spanish_0.pdf" class="alink">
+                        <span>Kit de Herramientas de Preparación para la Inmigración del ILRC.</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="spanish">
+                    <a href="https://static1.squarespace.com/static/533dcf7ce4b0f92a7a64292e/t/67a3dc7a42280e6ab9d13b42/1738792063071/2025+Immigrant+Safety+Plan+for+Youth+and+Children_Spanish.pdf" class="alink">
+                        <span>Plan de Seguridad para Familias Inmigrantes</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="spanish">
+                    <h2>Servicios y Apoyos de Vivienda</h2>
+                </li>
+                <li class="spanish">
+                    <a href="https://coalitionfiles.blob.core.windows.net/files/Immigration%20Relief%20flyer%20-%20Spanish.pdf" class="alink">
+                        <span>Asistencia Financiera de Emergencia</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="spanish">
+                    <a href="https://www.piercecountywa.gov/4701/Housing-Assistance-and-Programs" class="alink">
+                        <span>Servicios y Apoyos de Vivienda | Condado de Pierce, WA</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="spanish">
+                    <a href="https://www.piercecountywa.gov/1280/Energy-Assistance" class="alink">
+                        <span>Programa de Asistencia de Energía | Condado de Pierce, WA</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </li>
+                <li class="spanish">
+                    <a href="https://www.piercecountywa.gov/7142/Eviction-Prevention" class="alink">
+                        <span>Recurso de Prevención de Desalojos | Eviction prevention Resources </span>
+                        <i class="fas fa-file-alt"></i>
                     </a>
                 </li>
             </ul>
@@ -339,10 +635,10 @@
 
     <!-- Section 3: Google Form -->
     <section id="section3" >
-        <h2>Feedback Form</h2>
+        <h2>Contact Form</h2>
         <div class="form-container">
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdgMALZUc6RpuTCTeyn7J3if-JUlDs7DPtUs_glPcDjROjJXQ/viewform?embedded=true" 
-                    >Loading�</iframe>
+                    >Loading...</iframe>
         </div>
     </section>
 
